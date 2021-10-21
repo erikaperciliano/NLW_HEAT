@@ -71,11 +71,11 @@ class AuthenticateUserService {
                 id: user.id
             }
         },
-            process.env.JWT_SECRET,
-            {
-                subject: user.id,
-                expiresIn: '1d'
-            }
+        process.env.JWT_SECRET,
+        {
+            subject: user.id,
+            expiresIn: '1d'
+        }
 
         ) 
 
